@@ -1,0 +1,23 @@
+{
+  "name": "nowagent",
+  "version": "1.0.0",
+  "description": "App to convert AMQP/MQTT events to HTTP API calls.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumeetninawe/nowagent.git"
+  },
+  "author": "Sumeet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumeetninawe/nowagent/issues"
+  },
+  "homepage": "https://github.com/sumeetninawe/nowagent#readme",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "request": "^2.88.0"
+  }
+}
