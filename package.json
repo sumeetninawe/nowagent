@@ -2,7 +2,7 @@
   "name": "nowagent",
   "version": "1.0.0",
   "description": "App to convert AMQP/MQTT events to HTTP API calls.",
-  "main": "index.js",
+  "main": "nowagent.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
