@@ -11,7 +11,8 @@ amqp.connect('amqp://admin:admin@sumeet.life:5672/', function(err, conn) {
         ch.sendToQueue(q, Buffer.from('CONN'));
         ch.consume(q, function(msg) {
         console.log(" [x] Received %s", msg.content.toString());
-        var obj = JSON.parse(msg.content.toString());
+        if(msg.content.toString() != 'CONN')
+            var obj = JSON.parse(msg.content.toString());
         request.post({
             "headers": { "content-type": "application/json" },
             "url": "https://dev67107.service-now.com//api/2230/rabbitevents/event",
